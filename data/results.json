@@ -1,6 +1,10 @@
 {
-  "updated": "2026-06-11T00:00:00Z",
+  "updated": "2026-06-08T15:55:41Z",
   "games": {},
-  "final": { "champion": "", "runner_up": "", "third": "" },
+  "final": {
+    "champion": "",
+    "runner_up": "",
+    "third": ""
+  },
   "manual_overrides": {}
 }
