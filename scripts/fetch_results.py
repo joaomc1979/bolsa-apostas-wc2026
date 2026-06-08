@@ -144,6 +144,8 @@ def norm(t: str) -> str:
 
 
 def to_our(api_name: str) -> str:
+    if not api_name:
+        return ""
     lc = api_name.strip().lower()
     return TEAM_MAP.get(lc, api_name.strip())
 
