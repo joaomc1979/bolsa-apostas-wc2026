@@ -36,4 +36,4 @@ jobs:
           git add data/results.json
           # Only commit if something changed
           git diff --staged --quiet || git commit -m "chore: update WC2026 results [skip ci]"
-          git push
+         git pull --rebase && git push
