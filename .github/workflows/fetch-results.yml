@@ -3,7 +3,7 @@ name: Fetch WC2026 Results
 on:
   schedule:
     # Every 30 minutes during tournament (Jun 11 – Jul 19)
-    - cron: '*/30 * * * *'
+    - cron: '0,30 * * * *'
   workflow_dispatch: # allow manual trigger from GitHub UI
 
 jobs:
