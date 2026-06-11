@@ -1,6 +1,14 @@
 {
-  "updated": "2026-06-11T19:17:21Z",
-  "games": {},
+  "updated": "2026-06-11T19:18:22Z",
+  "games": {
+    "1": {
+      "hg": 0,
+      "ag": 0,
+      "fs": "NO GOALS",
+      "status": "LIVE",
+      "min": null
+    }
+  },
   "final": {
     "champion": "",
     "runner_up": "",
