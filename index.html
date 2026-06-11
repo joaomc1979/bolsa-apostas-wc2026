@@ -351,7 +351,7 @@ function chipHtml(status, minute) {
 function renderJ() {
   const flt = document.getElementById('jf').value;
   const FIN_S  = new Set(['FT','AET','PEN']);
-  const LIVE_S = new Set(['1H','2H','ET','BT','P','INT']);
+  const LIVE_S = new Set(['1H','2H','ET','BT','P','INT','LIVE']);
   let list = GAMES;
   if (flt==='fin')  list = GAMES.filter(g=>{const r=RES[String(g.game)];return r&&FIN_S.has(r.status);});
   else if (flt==='live') list = GAMES.filter(g=>{const r=RES[String(g.game)];return r&&LIVE_S.has(r.status);});
@@ -359,7 +359,7 @@ function renderJ() {
   let h='';
   for (const g of list) {
     const r = RES[String(g.game)] || {};
-    const isLiveG = new Set(['1H','2H','ET','BT','P','INT']).has(r.status);
+    const isLiveG = new Set(['1H','2H','ET','BT','P','INT','LIVE']).has(r.status);
     const chip = chipHtml(r.status, r.min);
     const scoreHtml = r.hg!=null && r.ag!=null
       ? `<span class="sb${isLiveG?' live':''}">${r.hg}<span style="opacity:.4;font-size:12px">–</span>${r.ag}</span>`
