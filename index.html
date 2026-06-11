@@ -163,8 +163,7 @@ const TEAMS=[...new Set(GAMES.flatMap(g=>[g.home,g.away]))].sort();
 // IMPORTANT: update this URL to match your actual GitHub Pages repo path
 const RESULTS_URL = 'data/results.json';
 // Auto-refresh interval: 30 min (matches the GitHub Actions cron)
-const REFRESH_MS = 30 * 60 * 1000;
-
+const REFRESH_MS = 60 * 1000;
 let RES = {};
 let FIN = { champion:'', runner_up:'', third:'' };
 let selS=null, sortC='rank', sortA=true;
@@ -344,7 +343,7 @@ function showD(sheet) {
 // ── JOGOS ────────────────────────────────────────────────────
 function chipHtml(status, minute) {
   const FIN  = new Set(['FT','AET','PEN']);
-  const LIVE = new Set(['1H','2H','ET','BT','P','INT']);
+  const LIVE = new Set(['1H','2H','ET','BT','P','INT','LIVE']);
   if (FIN.has(status))  return '<span class="chip c-f">FIM</span>';
   if (LIVE.has(status)) return `<span class="chip c-l">${minute||''}′</span>`;
   return '<span class="chip c-s">Agendado</span>';
