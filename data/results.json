@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T02:01:55Z",
+  "updated": "2026-06-12T02:02:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -7,6 +7,13 @@
       "fs": "México",
       "status": "FT",
       "min": null
+    },
+    "2": {
+      "hg": 0,
+      "ag": 0,
+      "fs": "NO GOALS",
+      "status": "LIVE",
+      "min": "1'"
     }
   },
   "final": {
