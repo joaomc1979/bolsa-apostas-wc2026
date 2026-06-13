@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T22:36:55Z",
+  "updated": "2026-06-13T22:37:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -37,11 +37,11 @@
       "min": null
     },
     "6": {
-      "hg": 0,
+      "hg": 1,
       "ag": 1,
       "fs": "Marrocos",
       "status": "LIVE",
-      "min": "32'"
+      "min": "33'"
     }
   },
   "final": {
