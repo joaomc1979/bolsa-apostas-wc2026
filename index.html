@@ -307,7 +307,7 @@ function showD(sheet) {
   const p = PLAYERS.find(x=>x.sheet===sheet); if(!p) return;
   const {tot,perf} = pStats(p);
   const played = GAMES.filter(g=>{const r=RES[String(g.game)];return r&&r.hg!=null;});
-  const won = played.filter(g=>scoreG(p,g.game)>=10).length;
+const won = played.filter(g=>{const r=RES[String(g.game)];const pred=p.games[String(g.game)];if(!r||r.hg==null||r.ag==null||!pred||pred.hg==null||pred.ag==null)return false;return Math.sign(+pred.hg-+pred.ag)===Math.sign(+r.hg-+r.ag);}).length;
   const fp = finPts(p);
   let rows = played.map(g => {
     const r=RES[String(g.game)]; const pred=p.games[String(g.game)];
