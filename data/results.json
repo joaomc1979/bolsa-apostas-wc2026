@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T22:04:55Z",
+  "updated": "2026-06-13T22:05:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -35,6 +35,13 @@
       "fs": "Suiça",
       "status": "FT",
       "min": null
+    },
+    "6": {
+      "hg": 0,
+      "ag": 0,
+      "fs": "NO GOALS",
+      "status": "LIVE",
+      "min": "1'"
     }
   },
   "final": {
