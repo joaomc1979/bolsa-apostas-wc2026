@@ -69,6 +69,8 @@ tr.hi td{background:var(--info-bg);}
 .dm .dv{font-size:18px;font-weight:600;}.dm .dl{font-size:11px;color:var(--text2);}
 .gp{color:var(--green);}.gn{color:var(--red);}.gz{color:var(--text3);}
 .gc{background:var(--bg);border:.5px solid var(--border);border-radius:var(--rl);padding:14px;margin-bottom:10px;}
+.gc[onclick]:hover{border-color:var(--text3);}
+.gc-on{border-color:var(--text);}
 .gc-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px;}
 .gc-t{font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px;}
 .gc-n{font-size:11px;color:var(--text3);min-width:22px;}
@@ -138,6 +140,7 @@ tr.hi td{background:var(--info-bg);}
       <option value="up">Por jogar</option>
     </select>
   </div>
+  <div id="jdp"></div>
   <div id="gl"></div>
 </div>
 
@@ -370,23 +373,82 @@ function renderJ() {
   for (const g of list) {
     const r = RES[String(g.game)] || {};
     const isLiveG = new Set(['1H','2H','ET','BT','P','INT','LIVE']).has(r.status);
+    const played = r.hg!=null && r.ag!=null;
     const chip = chipHtml(r.status, r.min);
-    const scoreHtml = r.hg!=null && r.ag!=null
+    const scoreHtml = played
       ? `<span class="sb${isLiveG?' live':''}">${r.hg}<span style="opacity:.4;font-size:12px">–</span>${r.ag}</span>`
       : '<span style="color:var(--text3)">— vs —</span>';
     const fsText = r.fs && r.fs!=='NO GOALS' ? r.fs : '—';
-    h += `<div class="gc">
+    const timeHtml = ptTime(r.kickoff, g.date);
+    // jogos ja jogados sao clicaveis -> painel com apostas de todos
+    const clickable = played ? ` onclick="showJD(${g.game})" style="cursor:pointer"` : '';
+    const openCls = (selJ===g.game) ? ' gc-on' : '';
+    h += `<div class="gc${openCls}"${clickable}>
       <div class="gc-h">
         <div class="gc-t"><span class="gc-n">${g.game}</span>${g.home}<span style="opacity:.4;font-size:12px">vs</span>${g.away} ${chip}</div>
-        <span class="gc-b">Gr.${g.group} · ${g.date.slice(5).replace('-','/')}</span>
+        <span class="gc-b">Gr.${g.group} · ${g.date.slice(5).replace('-','/')}${timeHtml}</span>
       </div>
       <div class="gc-body">
         ${scoreHtml}
         <span style="font-size:12px;color:var(--text2)">⚽ 1.º: <strong>${fsText}</strong></span>
+        ${played?'<span style="font-size:11px;color:var(--text3);margin-left:auto">ver apostas ›</span>':''}
       </div>
     </div>`;
   }
   document.getElementById('gl').innerHTML = h || '<div class="empty">Sem jogos nesta categoria</div>';
+}
+
+// Hora em Portugal a partir do kickoff (UTC, gravado pelo worker). Mostra "(dia N)" se cair no dia seguinte.
+function ptTime(kickoff, gameDate) {
+  if (!kickoff) return '';
+  try {
+    const d = new Date(kickoff);
+    if (isNaN(d)) return '';
+    const hm = d.toLocaleTimeString('pt-PT', {hour:'2-digit', minute:'2-digit', timeZone:'Europe/Lisbon'});
+    // dia em Portugal vs dia do calendario do torneio (gameDate = dia "americano")
+    const ptDay = d.toLocaleDateString('en-CA', {timeZone:'Europe/Lisbon'}); // YYYY-MM-DD
+    let extra = '';
+    if (gameDate && ptDay > gameDate) {
+      const dayN = parseInt(ptDay.slice(8,10), 10);
+      extra = ` (dia ${dayN})`;
+    }
+    return ` · 🕐 ${hm}${extra}`;
+  } catch(e) { return ''; }
+}
+
+// ── PAINEL: APOSTAS DE TODOS PARA UM JOGO ────────────────────
+let selJ = null;
+function showJD(gameNum) {
+  if (selJ===gameNum) { selJ=null; document.getElementById('jdp').innerHTML=''; renderJ(); return; }
+  selJ = gameNum;
+  const g = GAMES.find(x=>x.game===gameNum);
+  const r = RES[String(gameNum)];
+  if (!g || !r || r.hg==null) { selJ=null; return; }
+  const fsReal = r.fs && r.fs!=='NO GOALS' ? r.fs : '—';
+  // apostas de todos, com pontos nesse jogo, ordenadas por pontos desc
+  const rows = PLAYERS.map(p => {
+    const pred = p.games[String(gameNum)];
+    const pts = scoreG(p, gameNum);
+    const fsMatch = pred && pred.fs && r.fs && eq(pred.fs, r.fs) ? '⚽' : '';
+    return { p, pred, pts, fsMatch };
+  }).sort((a,b)=> b.pts - a.pts || a.p.name.localeCompare(b.p.name));
+  const body = rows.map(x => {
+    const cls = x.pts>0?'gp':x.pts<0?'gn':'gz';
+    const pv = x.pred && x.pred.hg!=null ? `${x.pred.hg}-${x.pred.ag}` : '?';
+    const fsv = x.pred && x.pred.fs && x.pred.fs!=='NO GOALS' ? x.pred.fs : '—';
+    return `<tr style="cursor:pointer" onclick="goTab('r');showD('${x.p.sheet}')">
+      <td style="font-size:12px">${x.p.name}</td>
+      <td style="color:var(--text2)">${pv}</td>
+      <td style="color:var(--text3);font-size:11px">${fsv} ${x.fsMatch}</td>
+      <td class="${cls}">${x.pts>=0?'+':''}${x.pts}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('jdp').innerHTML = `<div class="det">
+    <h3>Jogo ${g.game}: ${g.home} ${r.hg}–${r.ag} ${g.away} <button class="sm" onclick="showJD(${gameNum})">✕</button></h3>
+    <div style="font-size:12px;color:var(--text2);margin-bottom:12px">⚽ 1.º golo: <strong>${fsReal}</strong> · ${rows.length} apostas (ordenadas por pontos neste jogo)</div>
+    <table style="width:100%;font-size:12px"><thead><tr><th>Apostador</th><th>Prev.</th><th>1.º golo</th><th>Pts</th></tr></thead><tbody>${body}</tbody></table>
+  </div>`;
+  document.getElementById('jdp').scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
 // ── FASE FINAL ───────────────────────────────────────────────
