@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T00:23:55Z",
+  "updated": "2026-06-14T00:24:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -40,8 +40,8 @@
       "hg": 1,
       "ag": 1,
       "fs": "Marrocos",
-      "status": "LIVE",
-      "min": "90'+23'"
+      "status": "FT",
+      "min": null
     }
   },
   "final": {
