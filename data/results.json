@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T03:02:55Z",
+  "updated": "2026-06-14T03:03:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -53,8 +53,8 @@
       "hg": 0,
       "ag": 1,
       "fs": "Escócia",
-      "status": "LIVE",
-      "min": "90'+8'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-14T01:00Z"
     },
     "8": {
