@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T01:36:55Z",
+  "updated": "2026-06-14T01:37:56Z",
   "games": {
     "1": {
       "hg": 2,
@@ -54,12 +54,16 @@
       "ag": 1,
       "fs": "Escócia",
       "status": "LIVE",
-      "min": "33'",
+      "min": "35'",
       "kickoff": "2026-06-14T01:00Z"
     },
     "8": {
       "status": "SCHEDULED",
       "kickoff": "2026-06-14T04:00Z"
+    },
+    "9": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-14T17:00Z"
     },
     "10": {
       "status": "SCHEDULED",
@@ -157,6 +161,14 @@
       "status": "SCHEDULED",
       "kickoff": "2026-06-20T17:00Z"
     },
+    "35": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-20T20:00Z"
+    },
+    "36": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-21T00:00Z"
+    },
     "37": {
       "status": "SCHEDULED",
       "kickoff": "2026-06-21T16:00Z"
@@ -226,6 +238,10 @@
       "kickoff": "2026-06-25T01:00Z"
     },
     "55": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-25T20:00Z"
+    },
+    "56": {
       "status": "SCHEDULED",
       "kickoff": "2026-06-25T20:00Z"
     },
