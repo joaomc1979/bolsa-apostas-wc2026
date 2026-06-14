@@ -177,8 +177,18 @@ function n(t) {
     .replace(/[óòôõ]/g,'o').replace(/[úùû]/g,'u').replace(/[ç]/g,'c')
     .replace(/[ñ]/g,'n').replace(/\s+/g,' ').trim();
 }
-function eq(a,b){ return n(a)===n(b); }
-
+const SYNONYMS = {
+  'coreia': 'coreia do sul',
+  'usa': 'eua',
+  'uruguais': 'uruguai',
+  'bornisa': 'bosnia',
+  'egito': 'egipto',
+  'inglatrerra': 'inglaterra',
+  'costa do marfim': 'costa de marfim',
+  'uzebequistao': 'uzbequistao',
+};
+function canon(t){ const x=n(t); return SYNONYMS[x] || x; }
+function eq(a,b){ return canon(a)===canon(b); }
 // ── LOAD RESULTS ─────────────────────────────────────────────
 async function loadResults() {
   const rfb=document.getElementById('rfb');
