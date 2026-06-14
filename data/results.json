@@ -1,54 +1,293 @@
 {
-  "updated": "2026-06-14T01:25:55Z",
+  "updated": "2026-06-14T01:26:56Z",
   "games": {
     "1": {
       "hg": 2,
       "ag": 0,
       "fs": "México",
       "status": "FT",
-      "min": null
+      "min": null,
+      "kickoff": "2026-06-11T19:00Z"
     },
     "2": {
       "hg": 2,
       "ag": 1,
       "fs": "Chéquia",
       "status": "FT",
-      "min": null
+      "min": null,
+      "kickoff": "2026-06-12T02:00Z"
     },
     "3": {
       "hg": 1,
       "ag": 1,
       "fs": "Bósnia",
       "status": "FT",
-      "min": null
+      "min": null,
+      "kickoff": "2026-06-12T19:00Z"
     },
     "4": {
       "hg": 4,
       "ag": 1,
       "fs": "EUA",
       "status": "FT",
-      "min": null
+      "min": null,
+      "kickoff": "2026-06-13T01:00Z"
     },
     "5": {
       "hg": 1,
       "ag": 1,
       "fs": "Suiça",
       "status": "FT",
-      "min": null
+      "min": null,
+      "kickoff": "2026-06-13T19:00Z"
     },
     "6": {
       "hg": 1,
       "ag": 1,
       "fs": "Marrocos",
       "status": "FT",
-      "min": null
+      "min": null,
+      "kickoff": "2026-06-13T22:00Z"
     },
     "7": {
       "hg": 0,
       "ag": 0,
       "fs": "NO GOALS",
       "status": "LIVE",
-      "min": "23'"
+      "min": "24'",
+      "kickoff": "2026-06-14T01:00Z"
+    },
+    "8": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-14T04:00Z"
+    },
+    "10": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-14T23:00Z"
+    },
+    "11": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-14T20:00Z"
+    },
+    "12": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-15T02:00Z"
+    },
+    "13": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-15T16:00Z"
+    },
+    "14": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-15T22:00Z"
+    },
+    "15": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-15T19:00Z"
+    },
+    "16": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-16T01:00Z"
+    },
+    "17": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-17T04:00Z"
+    },
+    "18": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-16T19:00Z"
+    },
+    "19": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-16T22:00Z"
+    },
+    "20": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-17T01:00Z"
+    },
+    "22": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-17T20:00Z"
+    },
+    "23": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-17T23:00Z"
+    },
+    "24": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-18T02:00Z"
+    },
+    "25": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-18T16:00Z"
+    },
+    "26": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-18T19:00Z"
+    },
+    "27": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-18T22:00Z"
+    },
+    "28": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-19T01:00Z"
+    },
+    "29": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-20T03:00Z"
+    },
+    "30": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-19T19:00Z"
+    },
+    "31": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-19T22:00Z"
+    },
+    "32": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-20T00:30Z"
+    },
+    "33": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-21T04:00Z"
+    },
+    "34": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-20T17:00Z"
+    },
+    "37": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-21T16:00Z"
+    },
+    "38": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-21T19:00Z"
+    },
+    "39": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-21T22:00Z"
+    },
+    "40": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-22T01:00Z"
+    },
+    "41": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-22T17:00Z"
+    },
+    "42": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-22T21:00Z"
+    },
+    "43": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-23T00:00Z"
+    },
+    "44": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-23T03:00Z"
+    },
+    "45": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-23T17:00Z"
+    },
+    "46": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-23T20:00Z"
+    },
+    "47": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-23T23:00Z"
+    },
+    "49": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-24T19:00Z"
+    },
+    "50": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-24T19:00Z"
+    },
+    "51": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-24T22:00Z"
+    },
+    "52": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-24T22:00Z"
+    },
+    "53": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-25T01:00Z"
+    },
+    "54": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-25T01:00Z"
+    },
+    "55": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-25T20:00Z"
+    },
+    "57": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-25T23:00Z"
+    },
+    "58": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-25T23:00Z"
+    },
+    "59": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-26T02:00Z"
+    },
+    "60": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-26T02:00Z"
+    },
+    "61": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-26T19:00Z"
+    },
+    "62": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-26T19:00Z"
+    },
+    "63": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T00:00Z"
+    },
+    "64": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T00:00Z"
+    },
+    "65": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T03:00Z"
+    },
+    "66": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T03:00Z"
+    },
+    "67": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T21:00Z"
+    },
+    "68": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T21:00Z"
+    },
+    "69": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T23:30Z"
+    },
+    "71": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-28T02:00Z"
+    },
+    "72": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-28T02:00Z"
     }
   },
   "final": {
