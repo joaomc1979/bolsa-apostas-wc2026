@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T18:58:55Z",
+  "updated": "2026-06-14T18:59:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -69,8 +69,8 @@
       "hg": 7,
       "ag": 1,
       "fs": "Alemanha",
-      "status": "LIVE",
-      "min": "90'+5'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-14T17:00Z"
     },
     "10": {
