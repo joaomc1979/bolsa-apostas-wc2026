@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T20:57:55Z",
+  "updated": "2026-06-15T20:58:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -113,8 +113,8 @@
       "hg": 1,
       "ag": 1,
       "fs": "Egipto",
-      "status": "LIVE",
-      "min": "90'+5'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-15T19:00Z"
     },
     "16": {
