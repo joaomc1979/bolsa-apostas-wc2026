@@ -123,6 +123,7 @@ tr.hi td{background:var(--info-bg);}
 .group-name{flex:1;font-weight:500;}
 .group-pts{font-family:'DM Mono',monospace;font-size:12px;font-weight:700;color:#f5a623;}
 .group-qual{background:rgba(46,204,113,0.16);}
+.match-chan{margin-top:8px;padding-top:8px;border-top:.5px solid var(--border);font-size:11px;color:#1D9E75;font-weight:600;}
 @media(max-width:520px){.groups-grid{grid-template-columns:1fr;}}
 </style>
 </head>
@@ -587,6 +588,7 @@ function flagPT(name){ return WCFLAGS[canon(name)] || '🏳️'; }
 const WC_FIN  = new Set(['FT','AET','PEN']);
 const WC_LIVE = new Set(['1H','2H','ET','BT','P','INT','LIVE']);
 let wcSelDate = null;
+const WC_CHAN = {"1":2,"3":2,"6":2,"9":2,"13":2,"18":2,"21":2,"26":2,"32":2,"35":2,"37":2,"41":2,"45":2,"51":2,"55":1,"61":1,"69":1};
 function wcDateKey(g){
   const r = RES[String(g.game)] || {};
   if (r.kickoff) return new Date(r.kickoff).toLocaleDateString('en-CA',{timeZone:'Europe/Lisbon'});
@@ -641,7 +643,8 @@ function wcRenderMatches(){
     if (fin){ mid=`<div class="match-score-big">${r.hg}<br><span style="font-size:15px;color:var(--text3)">—</span><br>${r.ag}</div>`; badge='<span class="match-status-badge status-finished">FIM</span>'; }
     else if (live){ mid=`<div class="match-score-big">${r.hg}<br><span style="font-size:15px;color:var(--text3)">—</span><br>${r.ag}</div>`; badge=`<span class="match-status-badge status-live">🔴 ${r.min||'AO VIVO'}</span>`; }
     else { const t=r.kickoff?new Date(r.kickoff).toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Lisbon'}):'—'; mid=`<div class="match-score-big" style="font-size:20px;color:var(--text2)">${t}<br><span style="font-size:10px">PT</span></div>`; badge='<span class="match-status-badge status-scheduled">Agendado</span>'; }
-    return `<div class="match-card"><div class="match-header"><div class="match-group">Grupo ${g.group} · Jogo ${g.game}</div>${badge}</div><div class="match-teams-row"><div class="match-team"><div class="match-team-flag">${flagPT(g.home)}</div><div class="match-team-name">${g.home}</div></div>${mid}<div class="match-team away"><div class="match-team-flag">${flagPT(g.away)}</div><div class="match-team-name">${g.away}</div></div></div></div>`;
+    const _c=WC_CHAN[String(g.game)]; const chHtml=_c?`<div class="match-chan">📺 Sinal aberto${_c===2?' · ▶️ YouTube':''}</div>`:'';
+    return `<div class="match-card"><div class="match-header"><div class="match-group">Grupo ${g.group} · Jogo ${g.game}</div>${badge}</div><div class="match-teams-row"><div class="match-team"><div class="match-team-flag">${flagPT(g.home)}</div><div class="match-team-name">${g.home}</div></div>${mid}<div class="match-team away"><div class="match-team-flag">${flagPT(g.away)}</div><div class="match-team-name">${g.away}</div></div></div>${chHtml}</div>`;
   }).join('');
 }
 
