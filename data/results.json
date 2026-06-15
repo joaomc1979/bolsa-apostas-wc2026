@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T01:04:56Z",
+  "updated": "2026-06-15T01:05:55Z",
   "games": {
     "1": {
       "hg": 2,
@@ -77,8 +77,8 @@
       "hg": 1,
       "ag": 0,
       "fs": "Costa de Marfim",
-      "status": "LIVE",
-      "min": "90'+8'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-14T23:00Z"
     },
     "11": {
