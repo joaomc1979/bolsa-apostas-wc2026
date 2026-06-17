@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T18:21:45Z",
+  "updated": "2026-06-17T18:22:45Z",
   "games": {
     "1": {
       "hg": 2,
@@ -161,6 +161,14 @@
       "min": null,
       "kickoff": "2026-06-17T01:00Z"
     },
+    "21": {
+      "hg": 1,
+      "ag": 1,
+      "fs": "Portugal",
+      "status": "LIVE",
+      "min": "59'",
+      "kickoff": "2026-06-17T17:00Z"
+    },
     "22": {
       "status": "SCHEDULED",
       "kickoff": "2026-06-17T20:00Z"
@@ -265,6 +273,10 @@
       "status": "SCHEDULED",
       "kickoff": "2026-06-23T23:00Z"
     },
+    "48": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-24T02:00Z"
+    },
     "49": {
       "status": "SCHEDULED",
       "kickoff": "2026-06-24T19:00Z"
@@ -346,6 +358,10 @@
       "kickoff": "2026-06-27T21:00Z"
     },
     "69": {
+      "status": "SCHEDULED",
+      "kickoff": "2026-06-27T23:30Z"
+    },
+    "70": {
       "status": "SCHEDULED",
       "kickoff": "2026-06-27T23:30Z"
     },
