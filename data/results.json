@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T04:01:45Z",
+  "updated": "2026-06-18T04:02:45Z",
   "games": {
     "1": {
       "hg": 2,
@@ -189,8 +189,8 @@
       "hg": 1,
       "ag": 3,
       "fs": "Colômbia",
-      "status": "LIVE",
-      "min": "90'+10'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-18T02:00Z"
     },
     "25": {
