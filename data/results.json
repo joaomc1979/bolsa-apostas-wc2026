@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T17:58:44Z",
+  "updated": "2026-06-18T17:59:44Z",
   "games": {
     "1": {
       "hg": 2,
@@ -197,8 +197,8 @@
       "hg": 1,
       "ag": 1,
       "fs": "Chéquia",
-      "status": "LIVE",
-      "min": "90'+7'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-18T16:00Z"
     },
     "26": {
