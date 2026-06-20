@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T18:56:44Z",
+  "updated": "2026-06-20T18:57:45Z",
   "games": {
     "1": {
       "hg": 2,
@@ -265,8 +265,8 @@
       "hg": 5,
       "ag": 1,
       "fs": "Paises Baixos",
-      "status": "LIVE",
-      "min": "90'+5'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-20T17:00Z"
     },
     "35": {
