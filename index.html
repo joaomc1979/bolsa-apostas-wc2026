@@ -295,7 +295,7 @@ function scoreG(p, gn) {
   if (dA===1) pts-=1; else if (dA===2) pts-=2; else if (dA>2) pts-=3;
   const fs  = pred.fs && pred.fs!=='NO GOALS' ? pred.fs : null;
   const rfs = r.fs   && r.fs!=='NO GOALS'   ? r.fs   : null;
-  if (fs && rfs && eq(fs, rfs)) pts += 3;
+  if (pred.fs && r.fs && eq(pred.fs, r.fs)) pts += 3;
   return pts;
 }
 function finPts(p) {
