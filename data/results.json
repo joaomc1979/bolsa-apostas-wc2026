@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T17:01:10Z",
+  "updated": "2026-06-22T17:02:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -322,7 +322,11 @@
       "kickoff": "2026-06-22T01:00Z"
     },
     "41": {
-      "status": "SCHEDULED",
+      "hg": 0,
+      "ag": 0,
+      "fs": "NO GOALS",
+      "status": "LIVE",
+      "min": "1'",
       "kickoff": "2026-06-22T17:00Z"
     },
     "42": {
