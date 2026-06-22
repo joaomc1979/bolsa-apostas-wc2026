@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T19:02:09Z",
+  "updated": "2026-06-22T19:03:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -325,8 +325,8 @@
       "hg": 2,
       "ag": 0,
       "fs": "Argentina",
-      "status": "LIVE",
-      "min": "90'+8'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-22T17:00Z"
     },
     "42": {
