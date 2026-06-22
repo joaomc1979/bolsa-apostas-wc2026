@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T03:01:09Z",
+  "updated": "2026-06-22T03:02:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -317,8 +317,8 @@
       "hg": 1,
       "ag": 3,
       "fs": "Nova Zelandia",
-      "status": "LIVE",
-      "min": "90'+10'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-22T01:00Z"
     },
     "41": {
