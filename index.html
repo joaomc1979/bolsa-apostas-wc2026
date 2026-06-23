@@ -209,7 +209,7 @@ const TEAMS=[...new Set(GAMES.flatMap(g=>[g.home,g.away]))].sort();
 
 // Results come from data/results.json (written by GitHub Actions)
 // IMPORTANT: update this URL to match your actual GitHub Pages repo path
-const RESULTS_URL = 'data/results.json';
+const RESULTS_URL = 'https://raw.githubusercontent.com/joaomc1979/bolsa-apostas-wc2026/main/data/results.json';
 // Auto-refresh interval: 30 min (matches the GitHub Actions cron)
 const REFRESH_MS = 60 * 1000;
 let RES = {};
