@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T18:59:09Z",
+  "updated": "2026-06-23T19:00:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -357,8 +357,8 @@
       "hg": 5,
       "ag": 0,
       "fs": "Portugal",
-      "status": "LIVE",
-      "min": "90'+5'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-23T17:00Z"
     },
     "46": {
