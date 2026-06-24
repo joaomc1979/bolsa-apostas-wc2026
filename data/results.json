@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T19:42:09Z",
+  "updated": "2026-06-24T19:43:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -390,12 +390,12 @@
       "ag": 0,
       "fs": "NO GOALS",
       "status": "LIVE",
-      "min": "42'",
+      "min": "43'",
       "kickoff": "2026-06-24T19:00Z"
     },
     "50": {
       "hg": 2,
-      "ag": 0,
+      "ag": 1,
       "fs": "Bósnia",
       "status": "LIVE",
       "min": "42'",
