@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T22:19:09Z",
+  "updated": "2026-06-24T22:20:10Z",
   "games": {
     "1": {
       "hg": 2,
@@ -389,7 +389,7 @@
       "hg": 2,
       "ag": 1,
       "fs": "Suiça",
-      "status": "FT",
+      "status": "SCHEDULED",
       "min": null,
       "kickoff": "2026-06-24T19:00Z"
     },
@@ -406,7 +406,7 @@
       "ag": 1,
       "fs": "Brasil",
       "status": "LIVE",
-      "min": "17'",
+      "min": "18'",
       "kickoff": "2026-06-24T22:00Z"
     },
     "52": {
@@ -414,7 +414,7 @@
       "ag": 1,
       "fs": "Haiti",
       "status": "LIVE",
-      "min": "18'",
+      "min": "19'",
       "kickoff": "2026-06-24T22:00Z"
     },
     "53": {
