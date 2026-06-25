@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T02:57:09Z",
+  "updated": "2026-06-25T02:58:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -421,16 +421,16 @@
       "hg": 0,
       "ag": 3,
       "fs": "México",
-      "status": "LIVE",
-      "min": "90'+6'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-25T01:00Z"
     },
     "54": {
       "hg": 1,
       "ag": 0,
       "fs": "Africa do Sul",
-      "status": "LIVE",
-      "min": "90'+6'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-25T01:00Z"
     },
     "55": {
