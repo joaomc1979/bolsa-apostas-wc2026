@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T00:02:09Z",
+  "updated": "2026-06-25T00:03:09Z",
   "games": {
     "1": {
       "hg": 2,
@@ -405,8 +405,8 @@
       "hg": 0,
       "ag": 3,
       "fs": "Brasil",
-      "status": "LIVE",
-      "min": "90'+6'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-24T22:00Z"
     },
     "52": {
