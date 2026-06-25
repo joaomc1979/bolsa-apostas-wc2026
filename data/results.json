@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T20:17:42Z",
+  "updated": "2026-06-25T20:18:43Z",
   "games": {
     "1": {
       "hg": 2,
@@ -438,7 +438,7 @@
       "ag": 1,
       "fs": "Alemanha",
       "status": "LIVE",
-      "min": "17'",
+      "min": "19'",
       "kickoff": "2026-06-25T20:00Z"
     },
     "56": {
@@ -446,7 +446,7 @@
       "ag": 1,
       "fs": "Costa de Marfim",
       "status": "LIVE",
-      "min": "16'",
+      "min": "17'",
       "kickoff": "2026-06-25T20:00Z"
     },
     "57": {
