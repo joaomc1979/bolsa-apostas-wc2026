@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T21:04:43Z",
+  "updated": "2026-06-26T21:05:45Z",
   "games": {
     "1": {
       "hg": 2,
@@ -493,8 +493,8 @@
       "hg": 5,
       "ag": 0,
       "fs": "Senegal",
-      "status": "LIVE",
-      "min": "90'+6'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-26T19:00Z"
     },
     "63": {
