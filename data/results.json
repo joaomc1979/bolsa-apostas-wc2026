@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T00:54:43Z",
+  "updated": "2026-06-26T00:55:44Z",
   "games": {
     "1": {
       "hg": 2,
@@ -454,15 +454,15 @@
       "ag": 1,
       "fs": "Japão",
       "status": "LIVE",
-      "min": "90'+4'",
+      "min": "90'+5'",
       "kickoff": "2026-06-25T23:00Z"
     },
     "58": {
       "hg": 1,
       "ag": 3,
       "fs": "Paises Baixos",
-      "status": "LIVE",
-      "min": "90'+5'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-25T23:00Z"
     },
     "59": {
