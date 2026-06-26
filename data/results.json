@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T03:58:43Z",
+  "updated": "2026-06-26T03:59:42Z",
   "games": {
     "1": {
       "hg": 2,
@@ -470,15 +470,15 @@
       "ag": 2,
       "fs": "EUA",
       "status": "LIVE",
-      "min": "90'+6'",
+      "min": "90'+7'",
       "kickoff": "2026-06-26T02:00Z"
     },
     "60": {
       "hg": 0,
       "ag": 0,
       "fs": "NO GOALS",
-      "status": "LIVE",
-      "min": "90'+5'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-26T02:00Z"
     },
     "61": {
