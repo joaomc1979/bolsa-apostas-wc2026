@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T23:49:42Z",
+  "updated": "2026-06-27T23:50:44Z",
   "games": {
     "1": {
       "hg": 2,
@@ -550,15 +550,15 @@
       "ag": 0,
       "fs": "NO GOALS",
       "status": "LIVE",
-      "min": "18'",
+      "min": "19'",
       "kickoff": "2026-06-27T23:30Z"
     },
     "70": {
-      "hg": 1,
+      "hg": 0,
       "ag": 1,
       "fs": "Uzbequistão",
       "status": "LIVE",
-      "min": "18'",
+      "min": "19'",
       "kickoff": "2026-06-27T23:30Z"
     },
     "71": {
