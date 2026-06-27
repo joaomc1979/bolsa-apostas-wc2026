@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T00:42:42Z",
+  "updated": "2026-06-27T00:43:43Z",
   "games": {
     "1": {
       "hg": 2,
@@ -502,15 +502,15 @@
       "ag": 0,
       "fs": "NO GOALS",
       "status": "LIVE",
-      "min": "41'",
+      "min": "42'",
       "kickoff": "2026-06-27T00:00Z"
     },
     "64": {
       "hg": 0,
-      "ag": 0,
-      "fs": "NO GOALS",
+      "ag": 1,
+      "fs": "Espanha",
       "status": "LIVE",
-      "min": "41'",
+      "min": "42'",
       "kickoff": "2026-06-27T00:00Z"
     },
     "65": {
