@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T22:35:44Z",
+  "updated": "2026-06-27T22:36:43Z",
   "games": {
     "1": {
       "hg": 2,
@@ -534,15 +534,15 @@
       "ag": 2,
       "fs": "Inglaterra",
       "status": "LIVE",
-      "min": "76'",
+      "min": "77'",
       "kickoff": "2026-06-27T21:00Z"
     },
     "68": {
       "hg": 1,
-      "ag": 1,
+      "ag": 0,
       "fs": "Croácia",
       "status": "LIVE",
-      "min": "74'",
+      "min": "75'",
       "kickoff": "2026-06-27T21:00Z"
     },
     "69": {
