@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T02:00:48Z",
+  "updated": "2026-06-27T02:01:43Z",
   "games": {
     "1": {
       "hg": 2,
@@ -509,8 +509,8 @@
       "hg": 0,
       "ag": 1,
       "fs": "Espanha",
-      "status": "LIVE",
-      "min": "90'+6'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-27T00:00Z"
     },
     "65": {
