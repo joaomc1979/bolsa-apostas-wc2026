@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T03:59:42Z",
+  "updated": "2026-06-28T04:00:45Z",
   "games": {
     "1": {
       "hg": 2,
@@ -565,8 +565,8 @@
       "hg": 3,
       "ag": 3,
       "fs": "Áustria",
-      "status": "LIVE",
-      "min": "90'+7'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-28T02:00Z"
     },
     "72": {
