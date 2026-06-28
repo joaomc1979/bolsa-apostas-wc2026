@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T01:31:42Z",
+  "updated": "2026-06-28T01:32:42Z",
   "games": {
     "1": {
       "hg": 2,
@@ -557,8 +557,8 @@
       "hg": 3,
       "ag": 1,
       "fs": "Uzbequistão",
-      "status": "LIVE",
-      "min": "90'+8'",
+      "status": "FT",
+      "min": null,
       "kickoff": "2026-06-27T23:30Z"
     },
     "71": {
