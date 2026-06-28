@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T02:18:42Z",
+  "updated": "2026-06-28T02:19:42Z",
   "games": {
     "1": {
       "hg": 2,
@@ -566,15 +566,15 @@
       "ag": 0,
       "fs": "NO GOALS",
       "status": "LIVE",
-      "min": "17'",
+      "min": "18'",
       "kickoff": "2026-06-28T02:00Z"
     },
     "72": {
       "hg": 0,
-      "ag": 0,
-      "fs": "NO GOALS",
+      "ag": 1,
+      "fs": "Argentina",
       "status": "LIVE",
-      "min": "18'",
+      "min": "19'",
       "kickoff": "2026-06-28T02:00Z"
     }
   },
